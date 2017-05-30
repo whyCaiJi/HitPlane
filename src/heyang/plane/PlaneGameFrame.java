@@ -31,7 +31,7 @@ public class PlaneGameFrame extends MyFrame{
 	
 	// Declare static variables and objects
 	static Plane p;
-	static ArrayList bulletList;
+	static ArrayList<Bullet> bulletList;
 	static Date startTime;
 	static boolean gameEnd;
 	static Explode bao;
@@ -148,7 +148,7 @@ public class PlaneGameFrame extends MyFrame{
 	public static void initialize(){
 		// Declare start time and bulletList
 		startTime = new Date();
-		bulletList = new ArrayList();
+		bulletList = new ArrayList<Bullet>();
 		
 		// generate bullets
 		for(int i = 0;i < Constant.BULLET_NO;i++){

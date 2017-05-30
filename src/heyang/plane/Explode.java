@@ -8,8 +8,6 @@ package heyang.plane;
  * @version 1.0
  */
 
-import heyang.util.GameUtil;
-
 import java.awt.Graphics;
 import java.awt.Image;
 
