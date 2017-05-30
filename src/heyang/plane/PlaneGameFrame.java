@@ -91,19 +91,13 @@ public class PlaneGameFrame extends MyFrame{
 				printInfo(g,"Survive Time: "+period+"sec",Color.yellow,15,Constant.GAME_WIDTH/2-65,Constant.GAME_HEIGHT/2);
 				g.drawImage(losingPic, Constant.GAME_WIDTH/2-50, Constant.GAME_HEIGHT/2+10, null);
 				printInfo(g,"Press R to retry",Color.white,15,Constant.GAME_WIDTH/2-53,Constant.GAME_HEIGHT/2+130);
-			}else if(period >= 30 && period <60){
+			}else {
 				// Is a man
 				printInfo(g,"Survive Time: "+period+"sec",Color.yellow,15,Constant.GAME_WIDTH/2-65,Constant.GAME_HEIGHT/2);
 				printInfo(g,"You are a true bloody YeMen!",Color.white,20,Constant.GAME_WIDTH/2-120,Constant.GAME_HEIGHT/2+170);
 				g.drawImage(winningPic, Constant.GAME_WIDTH/2-50, Constant.GAME_HEIGHT/2+10, null);
 				printInfo(g,"Press R to retry",Color.white,15,Constant.GAME_WIDTH/2-53,Constant.GAME_HEIGHT/2+193);
-			}else{
-				// Huang Tu Fu Li
-				printInfo(g,"Survive Time: "+period+"sec",Color.yellow,15,Constant.GAME_WIDTH/2-65,Constant.GAME_HEIGHT/2);
-				printInfo(g,"You receive a special suprise!",Color.white,20,Constant.GAME_WIDTH/2-120,Constant.GAME_HEIGHT/2+170);
-				//g.drawImage(fuLiPic, Constant.GAME_WIDTH/2-100, Constant.GAME_HEIGHT/2+10, null);
-				printInfo(g,"Press R to retry",Color.white,15,Constant.GAME_WIDTH/2-53,Constant.GAME_HEIGHT/2+193);
-			}// end if...else...
+			}
 		}// end else
 	}// end paint()
 	
